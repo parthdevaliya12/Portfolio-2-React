@@ -1,0 +1,55 @@
+* {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+    transition: all 0.4s;
+    background: black;
+    color: white;
+}
+
+.btn:hover {
+    transform: scaleX(1.1);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scaleZ(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleZ(0.8);
+    }
+}
+
+.profile {
+    position: relative;
+}
+
+.profile::after {
+    content: "";
+    position: absolute;
+    border-top: solid 2px #c1ff72;
+    border-bottom: solid 2px #c1ff72;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    animation: ring 10s linear infinite;
+}
+
+@keyframes ring {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
