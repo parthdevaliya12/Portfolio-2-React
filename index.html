@@ -2,17 +2,65 @@
 <html lang="en">
 
 <head>
+    <!-- Basic -->
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/Style.css" />
-    <link rel="icon" type="image" href="./src/assets/logo2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title (VERY important for SEO) -->
+    <title>Parth Portfolio</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Parth is a frontend developer skilled in React and Tailwind CSS. Explore projects, skills, and contact details." />
+
+    <!-- Keywords (not critical, but okay for portfolio) -->
+    <meta name="keywords" content="Parth, Frontend Developer, React Developer, Tailwind CSS, Web Developer Portfolio" />
+
+    <!-- Author -->
+    <meta name="author" content="Parth" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./src/assets/logo2.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/Style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <title>Parth-Profile</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
+
+    <!-- Open Graph (for LinkedIn / Facebook) -->
+    <meta property="og:title" content="Parth | Frontend Developer Portfolio" />
+    <meta property="og:description" content="Frontend Developer specializing in React and Tailwind CSS. View my portfolio and projects." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/assets/logo2.png" />
+    <!-- After deploy, replace with your real domain -->
+    <!-- <meta property="og:url" content="https://your-domain.vercel.app" /> -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Parth | Frontend Developer Portfolio" />
+    <meta name="twitter:description" content="Explore Parth’s frontend projects built with React and Tailwind CSS." />
+    <meta name="twitter:image" content="/src/assets/logo2.png" />
+
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        // Initialize particles.js
+    </script>
+
+    <!-- Structured Data (JSON-LD for Google) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Parth",
+            "jobTitle": "Frontend Developer",
+            "url": "https://parth-portfolio-12.vercel.app",
+            "sameAs": [
+                "https://github.com/parthdevaliya12",
+                "https://linkedin.com/in/parthdevaliya12"
+            ]
+        }
     </script>
 </head>
 

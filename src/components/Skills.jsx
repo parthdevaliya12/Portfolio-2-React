@@ -136,7 +136,6 @@ const Skills = () => {
     { title: "Git", img:git  },
     { title: "Netlify", img: netlifyimg },
     { title: "Vercel", img: vercelimg },
-    { title: "Communication", img: commimg },
     { title: "Problem Solving", img: psimg },
     { title: "Debugging", img: debugimg },
    

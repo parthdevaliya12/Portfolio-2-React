@@ -54,7 +54,7 @@ const Navbar = () => {
               onClick={connect}
               className="btn bg-[#c1ff72] text-black text-sm sm:text-xl h-8 sm:h-10 w-32 sm:w-40 rounded-full cursor-pointer border-none transition hover:shadow-[0_0_10px_#c1ff72]"
             >
-              Join me
+              Contact Me
             </button>
           </div>
         </div>

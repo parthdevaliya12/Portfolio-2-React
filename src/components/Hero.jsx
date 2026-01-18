@@ -2,13 +2,13 @@ import { DownloadIcon, Facebook, Github, Linkedin } from "lucide-react";
 import React from "react";
 import { ReactTyped } from "react-typed";
 // import profile from "../assets/me.jpg";
-import profile from "../assets/i.jpg";
+import profile from "../assets/profile.jpg";
 
 const Hero = () => {
   const connect = () => window.scroll(0, 3500);
   const github = () => window.open("https://github.com/parthdevaliya12");
   const linkedin = () =>
-    window.open("https://www.linkedin.com/in/parth-devaliya-570171353");
+    window.open("https://www.linkedin.com/in/parthdevaliya12");
   const facebook = () =>
     window.open("https://www.facebook.com/parthdevaliya12");
 
@@ -34,7 +34,7 @@ const Hero = () => {
         <p className="text-2xl md:text-3xl">
           <span className="text-[#c1ff72]">
             <ReactTyped
-              strings={["Web Developer", "Frontend Developer", "Web Designer"]}
+              strings={['Web Application Developer','Full Stack Developer']}
               typeSpeed={60}
               backSpeed={40}
               loop
@@ -42,7 +42,7 @@ const Hero = () => {
           </span>
         </p>
         <p className="text-md md:text-lg mt-2">
-          I am passionate about frontend development and building responsive,
+          I am passionate about frontend and full stack development and building responsive,
           user-friendly websites with clean, maintainable code.
         </p>
 
@@ -66,7 +66,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-5 justify-center md:justify-start mt-5">
           <a
-            href="Resume.pdf"
+            href="parth-resume.pdf"
             className="btn bg-[#c1ff72] text-black w-full p-3 rounded-full  text-xl text-center  md:w-auto transition hover:scale-105 hover:shadow-[0_0_10px_#c1ff72]"
           >
             Download CV
@@ -75,7 +75,7 @@ const Hero = () => {
             onClick={connect}
             className="btn bg-[#c1ff72] text-black rounded-full p-3 text-xl w-full md:w-[150px] transition hover:scale-105 hover:shadow-[0_0_10px_#c1ff72]"
           >
-            Join me
+            Contact Me
           </button>
         </div>
       </div>

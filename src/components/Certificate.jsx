@@ -53,6 +53,10 @@ import cs from "../assets/cs.png";
 import mern from "../assets/mern.png";
 import hibernate from "../assets/hibernate.png";
 import javascript from "../assets/javascript.jpg";
+import gitandgithub from "../assets/git_and_github.jpg"
+import ai from "../assets/ai.jpg"
+import marketing from "../assets/marketing.jpg"
+import sql from "../assets/sql.jpg"
 
 
 const Certificate = () => {
@@ -62,13 +66,17 @@ const Certificate = () => {
     { img: mern, title: "MERN Stack App Development" },
     { img: hibernate, title: "Hands-On Learning On Hibernate Framework" },
     { img: javascript, title: "Introduction to Javascript Advanced" },
+    { img: gitandgithub, title: "Git and Github Profile" },
+    { img: ai, title: "Introduction to Artificial Intelligent" },
+    { img: sql, title: "30-Days SQL Micro Course" },
+    { img: marketing, title: "Preparing For The Success In Job Market" },
 
   ];
 
   return (
     <>
       <div
-        className="min-h-[700px] mb-10 flex justify-center items-center px-4 sm:px-6"
+        className="min-h-[700px] mb-20 flex justify-center items-center px-4 sm:px-6"
         id="certificate"
         data-aos="flip-right"
       >

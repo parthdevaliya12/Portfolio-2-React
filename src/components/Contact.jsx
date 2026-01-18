@@ -90,7 +90,7 @@
 // export default Contact;
 
 
-import { Heading, Locate, Mail, MessageCircle, Notebook, Phone, User } from "lucide-react";
+import { Heading, Locate, Mail, Map, MapIcon, MapPin, MessageCircle, Notebook, Phone, User } from "lucide-react";
 import React from "react";
 import {toast} from "react-toastify"
 
@@ -102,7 +102,7 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "65188b4e-4530-4b92-96c0-991e55be22f7");
+    formData.append("access_key", "476eb1bc-ef7c-4abf-8ca9-466ce89bdc95");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -137,14 +137,14 @@ const Contact = () => {
           
           <div className="flex items-center gap-3 ">
             <Mail className="text-[#c1ff72] border-2 border-[#c1ff72] rounded-full h-8 w-8 p-2" />
-            <p className="text-md break-words">parthdevaliya062@gmail.com</p>
+            <p className="text-md break-words">devparth63@gmail.com</p>
           </div>
           <div className="flex items-center gap-3">
             <Phone className="text-[#c1ff72] border-2 border-[#c1ff72] rounded-full h-8 w-8 p-2" />
             <p className="text-md break-words">+91 8490056689 (WhatsApp Only)</p>
           </div>
           <div className="flex items-center gap-3">
-            <Locate className="text-[#c1ff72] border-2 border-[#c1ff72] rounded-full h-8 w-8 p-2" />
+            <MapPin className="text-[#c1ff72] border-2 border-[#c1ff72] rounded-full h-8 w-8 p-2" />
             <p className="text-md break-words">Gandhinagar, Gujarat, India</p>
           </div>
         </div>
@@ -160,7 +160,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="w-full h-10 text-sm shadow shadow-white pl-10 border-none outline-none bg-transparent"
+                className="w-full h-10 text-sm shadow shadow-white pl-10 border-none outline-none bg-transparent mb-3"
                 required
               />
             </div>
@@ -172,7 +172,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                className="w-full h-10 text-sm shadow shadow-white pl-10 border-none outline-none bg-transparent"
+                className="w-full h-10 text-sm shadow shadow-white pl-10 border-none outline-none bg-transparent mb-3"
                 required
               />
             </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                 type="text"
                 name="subject"
                 placeholder="Your Subject"
-                className="w-full h-10 shadow text-sm shadow-white pl-10 border-none outline-none bg-transparent"
+                className="w-full h-10 shadow text-sm shadow-white pl-10 border-none outline-none bg-transparent mb-3"
                 required
               />
             </div>
@@ -195,7 +195,7 @@ const Contact = () => {
               <textarea
                 placeholder="Your Messages"
                 name="message"
-                className="w-full h-24 shadow text-sm shadow-white pl-10 pt-2 border-none outline-none bg-transparent resize-none"
+                className="w-full h-24 shadow text-sm shadow-white pl-10 pt-2 border-none outline-none bg-transparent resize-none mb-3"
                 required
               ></textarea>
             </div>

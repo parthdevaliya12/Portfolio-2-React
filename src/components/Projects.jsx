@@ -57,11 +57,13 @@ import React from "react";
 import p1 from "../assets/p1.png";
 import p2 from "../assets/p2.png";
 import p3 from "../assets/p3.png";
+import p4 from "../assets/p4.png";
 
 const Projects = () => {
 
-  const githubProject = () => {
+  const githublink = () => {
     window.open("https://github.com/parthdevaliya12");
+    
   };
 
   const project = [
@@ -80,6 +82,11 @@ const Projects = () => {
       title: "Online Men's Perfume Selling System",
       desc: "This project is built using PHP and MySQL...",
     },
+     {
+      img: p4,
+      title: "Expense Tracker",
+      desc: "This project is built using MongoDB, Express.js, React.js and Node.js...",
+    },
   ];
 
   return (
@@ -93,10 +100,11 @@ const Projects = () => {
           {project.map((proj, index) => (
             <div
               key={index}
-              onClick={githubProject}
+              onClick={githublink}
               className="btn bg-black shadow-md shadow-white rounded-md flex flex-col gap-5 h-auto w-full p-4 transition hover:scale-105 cursor-pointer"
             >
               <img
+               
                 src={proj.img}
                 alt={proj.title}
                 className="w-full h-auto object-contain rounded-md"
