@@ -1,7 +1,8 @@
 import { Github, Linkedin, Facebook } from "lucide-react";
 import React from "react";
 import { ReactTyped } from "react-typed";
-import profile from "../assets/profile.jpg";
+// import profile from "../assets/profile.jpg";
+import profile from "../assets/myphoto2.jpeg";
 
 const Hero = () => {
   const connect = () => {
